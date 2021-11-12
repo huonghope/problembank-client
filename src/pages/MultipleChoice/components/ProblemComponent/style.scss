@@ -1,0 +1,22 @@
+.multichoice-problem{
+    margin: 15px 0;
+    &__content{
+        font-size: 15px;
+        // background: rgb(231, 231, 231);
+        padding: 10px;
+    }
+    &__answer{
+        font-size: 13px;
+        ul{
+            li{
+                cursor: pointer;
+                padding: 5px 0;
+            }
+            .selected{
+                font-style: italic;
+                color: blue;
+            }
+
+        }
+    }
+}

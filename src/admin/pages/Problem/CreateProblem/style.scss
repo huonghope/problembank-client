@@ -1,0 +1,130 @@
+.problem-info{
+    display: flex;
+    margin-bottom: 50px;
+    &__title{
+        width: 10%;
+        padding-left: 5px;
+    }
+    &__content{
+        width: 90%;
+
+        &--name{
+            display: flex;
+            margin-bottom: 30px;
+            div{
+                width: 45%;
+                margin-right: 5%;
+                label{
+                    display: block;
+                }
+                input{
+                    width: 100%;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+                select{
+                    margin-right: 5px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        &--decs{
+            width: 90%;
+        }
+
+        &--category{
+            margin-top: 30px;
+            label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            div select{
+                margin-right: 10px;
+                width: 200px;
+                padding: 5px;
+            }
+        }
+
+        &--ioexample{
+            display: flex;
+            width: 100%;
+            label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            div{
+                width: 45%;
+                margin-right: 5%;
+                label{
+                    display: block;
+                }
+                input{
+                    width: 100%;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        &--testcase{
+            width: 100%;
+            .list-testcase{
+                display: flex;
+                flex-direction: column;
+                .wrapper-input{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 10px;
+                    > div{
+                        width: 45%;
+                        margin-right: 5%;
+                        label{
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border-radius: 5px;
+                        }
+                    }
+                    &:first-child{
+                        margin-top: 0px;
+                    }
+                }
+            }
+            button{
+                background: blue;
+                border: 1px solid transparent;
+                padding: 10px 25px;
+                margin-top: 10px;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                    background: white;
+                    color: blue;
+                    border-color: blue;
+                }
+    
+            }
+        }
+    }
+    &__btn--insert{
+        text-align: center;
+        padding: 10px 0px 50px 0px;
+        button{
+            background: blue;
+            margin:0 10px;
+            border: 1px solid transparent;
+            padding: 10px 25px;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background: white;
+                color: blue;
+                border-color: blue;
+            }
+
+        }
+    }
+}

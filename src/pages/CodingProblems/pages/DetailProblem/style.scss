@@ -1,0 +1,228 @@
+.problem__detail{
+    display: flex;
+    background: #FAFAFA;
+    min-height: 90vh;
+    &--content{
+        flex: 1;
+        padding-left: 10px;
+        max-width: 50%;
+        resize: both;
+        .tab__header{
+            height: 5%;
+            font-size: 14px;
+            &--content{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                li{
+                    width: 120px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                span{
+                    color: #ddd;
+                }
+            }
+            
+        }
+        .wrapper__content{
+            
+            .tab__header--task{
+                display: flex;
+                align-items: flex-end;
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+                transition: 0.18s color ease-in-out;
+                color: #546E74;
+                font-size: 13px;
+                position: relative;
+                li{
+                    margin-right: 50px;
+                }
+                button{
+                    color: white;
+                    padding: 5px 15px;
+                    cursor: pointer;
+                    border-color: transparent;
+                }
+                .btn-status{
+                    position: absolute;
+                    right: 0;
+                }
+                .success button{
+                    background: #1FA67A;
+                    &:hover{
+                        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+                        background: white;
+                        color: #1FA67A;
+                        border-color: #1FA67A;
+                    }
+                }
+                .fail button{
+                    background: red;
+                    &:hover{
+                        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+                        background: white;
+                        color: red;
+                        border-color: red;
+                    }
+                }
+            }
+            width: 98%;
+            background: #fff;
+            padding: 0 20px;
+            height: 90%;
+            -webkit-box-flex: 1;
+            // 자동 문제 설명 줄바꿈 
+            pre{
+                background-color: #f8f8fa;
+                padding:10px;
+                overflow: auto;
+                white-space: pre-wrap; 
+            }  
+            
+         
+            .problem__infor{
+                font-size: 14px;
+                padding: 10px 0;
+                max-width: 100%;
+                overflow-x: auto;
+                overflow-y: auto;
+                div{
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                &--example{
+                    column-gap: 2rem;
+                    &-title{
+                        display: flex;
+                        > p{
+                            width: 50%;
+                        }
+                    }
+                    &-content{
+                        max-height: 500px;
+                        overflow-x: auto;
+                        span:nth-child(1){
+                            margin-right: 5px;
+                        }
+                        > div{
+                            display: flex;
+                        }
+                    }
+                    div{
+                        flex: 1;
+                        span{
+                            background: #F7F9FA;
+                            display: block;
+                            padding: 10px;
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .tab__footer{
+            display: flex;
+            background: #FAFAFA;
+            height: 5%;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 50px;
+            .review__listproblem{
+                background-color: rgb(250, 250, 250);
+                border:1px solid black;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            button{
+                height: 40px;
+                width: 100px;
+                outline: none;
+                background-color: rgb(250, 250, 250);
+                transition: all 0.18s ease-in-out 0s;
+                border-radius: 3px;
+                border:1px solid black;
+                cursor: pointer;
+            }
+        }
+    }
+    &--vseditor{
+        flex: 1;
+        max-width: 50%;
+        .tab__header--editor{
+            height: 5%;
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                select{
+                    padding: 5px;
+                    cursor: pointer;
+                    outline: none;
+                    border-color: #ddd;
+                }
+                li:nth-child(2){
+                    margin-right: 10px;
+                }
+            }
+        }
+        .wrapper__editor{
+            height: 90%;
+            position: relative;
+            &--submit
+            {
+                > p{
+                    text-align: center;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    position: absolute;
+                    color: #1FA67A;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .3);
+                z-index: 1;
+                justify-content: center;
+                align-items: center;
+                > div{
+                    height: 100%;
+                }
+            }
+            .tab__footer{
+                display: flex;
+                justify-content: center;
+                button{
+                    height: 40px;
+                    width: 100px;
+                    outline: none;
+                    background-color: rgb(250, 250, 250);
+                    margin-top: 2px;
+                    transition: all 0.18s ease-in-out 0s;
+                    border-radius: 3px;
+                    border:1px solid black;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}

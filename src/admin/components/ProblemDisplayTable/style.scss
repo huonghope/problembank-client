@@ -1,0 +1,46 @@
+table{
+    width: 100%;
+    font-size: 14px;
+}
+table > thead > tr{
+    height: 50px;
+    font-size: 16px;
+    th{
+        border-top: 1px solid #ddd;
+    }
+}
+
+table > tbody > tr:nth-child(1){
+    cursor: pointer;
+    transition: .1s all;
+    th,td{
+        border-top: 3px solid #ccc;
+    }
+    &:hover{
+        background: #ECF0F1;
+    }
+}
+
+table > tbody > tr:nth-child(odd){
+    background: #F5F5F5;
+    transition: .1s all;
+    cursor: pointer;
+    td,th{
+        padding: 8px;
+        font-weight: 500;
+    }
+    &:hover{
+        background: #ECF0F1;
+    }
+}
+table > tbody > tr:nth-child(even){
+    cursor: pointer;
+    transition: .1s all;
+    td, th{
+        padding:+ 8px;
+        font-weight: 500;
+    }
+    &:hover{
+        background: #ECF0F1;
+    }
+}

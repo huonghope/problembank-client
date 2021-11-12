@@ -1,0 +1,29 @@
+
+.problems__by--category{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+
+    .list__child--category{
+        p{
+            background: #ccc;
+            text-align: center;
+            padding: 10px 0;
+            color: black;
+        }
+        .active-class{
+            background: #282828;
+            a{
+                color: white;
+            }
+        }
+        width: 10%;
+        height: 100%;
+        float: left;
+    }
+    .list__problems{
+        float: right;
+        width: 90%;
+        height: 100%;
+    }
+}
